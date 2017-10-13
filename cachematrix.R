@@ -1,7 +1,8 @@
 ## These Functions set and get a matrix and then calculate the inverse matrix
 
-## This function user set a matrix and then het that matrix
-## then set the inversse matrix and get the inverse matrix
+## The function 'makeCacheMatrix'  set a matrix and then get that matrix
+## Also set the inverse matrix and get the inverse matrix. 
+## It not make calculations only save values to vector
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -17,8 +18,9 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-## This function getinverse matrix, check if it has value and if not then 
-## calculate the inverse matrix and get the calculated value to getinverse variable
+## The 'cacheSolve function getinverse matrix, check if it has value and if not then 
+## calculate the inverse matrix by using function 'Solve' and get the calculated value to getinverse variable.
+## If the getinverse has value then print a massege, otherwise calsulate inverse matrix
 
 cacheSolve <- function(x, ...) {
     m <- x$getinverse()
